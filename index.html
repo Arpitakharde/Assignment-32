@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
+
+    <style>
+    .container{
+        width:300px;
+        border:1px solid #ff6600;
+        border-radius:10px;
+        margin:20px auto;
+        display: block;
+        background-color: #ffe0cc;
+    }
+
+    .dice-image{
+        width:200px;
+        display:block;
+        margin:20px auto;
+    }
+
+    #heading{
+        text-align: center;
+    }
+
+    #button{
+        display: block;
+        margin:20px auto;
+
+    }
+
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1 id="heading">Dice Roller</h1>
 
-    <h1>Dice Roller</h1>
+        <img src="./image/one.png" alt="dice-img" class="dice-image">
 
-    <img src="./image/one.png" alt="dice-img">
+        <button id="button">Roll Dice</button>
 
-    <button>Roll Dice</button>
-    
+    </div>
 <script>
 
     const min=1;
