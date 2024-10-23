@@ -53,8 +53,13 @@
 
     </div>
 <script>
+    
+    function defaultImage(){
+        const imageDice = document.getElementById("dice-image");
+        imageDice.src="./image/default.png";
+    }
+    
 
-    const imageDice = document.getElementById("dice-image")
     function diceRoller(){
 
         const min=1;
@@ -80,6 +85,9 @@
          else if(diceRandomNumber==6){
             imageDice.src="./image/six.png";
          }
+
+         setTimeout(defaultImage,400);
+
     }
    
 
